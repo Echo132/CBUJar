@@ -1,0 +1,99 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #007bff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #0056b3;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Navigation Styles */
+nav {
+    margin-top: 10px;
+}
+
+nav button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+}
+
+nav button:hover {
+    background-color: #004494;
+}
+
+body {
+    background: url('\\mainbackground.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+/* Pay Button Styles */
+form#paybutton {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+form#paybutton button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+form#paybutton button:hover {
+    background-color: #0056b3;
+}
+
+form#paybutton button p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    header h2 {
+        font-size: 1.5rem;
+    }
+
+    nav button {
+        font-size: 1rem;
+        padding: 8px 16px;
+    }
+
+    form#paybutton {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form#paybutton button {
+        width: 80%;
+        margin: 10px 0;
+    }
+}

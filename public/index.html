@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+
+<html>
+    <link rel="stylesheet" href="style.css">
+</html>
+
+<header> 
+    <!-- header and nav bar -->
+    <h2>CBU SWEAR JAR</h2>
+    <nav>
+        <button id="STATS">Swear Stats</button>
+    </nav>
+</header>
+
+<body> 
+    <!-- pay buttons and links -->
+    <form id="paybutton">
+        <!-- Venmo Button with link -->
+        <a href="https://venmo.com/u/Brycen-McGowan" target="_blank">
+            <button type="button">
+                <p>Venmo</p>
+            </button>
+        </a>
+
+        <!-- Zelle Button with link -->
+        <a href="https://teams.microsoft.com/l/message/19:6764df4e-2cbf-4d9c-be02-e7b2762c8acb_c391fa4c-6f1a-4ef7-a088-0d307df24270@unq.gbl.spaces/1726535060058?context=%7B%22contextType%22%3A%22chat%22%7D" target="_blank">
+            <button type="button">
+                <p>Zelle</p>
+            </button>
+        </a>
+
+        <!-- Paypal Button (no link provided yet) -->
+        <button type="button">
+            <p>Paypal</p>
+        </button>
+    </form>
+
+
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.13.1/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyAQ8E7oazpV-cG-IcQC2QCZ36GVvc5jeKY",
+          authDomain: "cbujar-10df8.firebaseapp.com",
+          projectId: "cbujar-10df8",
+          storageBucket: "cbujar-10df8.appspot.com",
+          messagingSenderId: "745280928062",
+          appId: "1:745280928062:web:2fb59616f010a65e8b946f",
+          measurementId: "G-ENVVPQ4FRK"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</body>
+</html>
